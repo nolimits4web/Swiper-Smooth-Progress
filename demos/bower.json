@@ -1,0 +1,10 @@
+{
+  "name": "swiper-smooth-progress-demos",
+  "description": "Demos for Smooth progress plugin for Swiper",
+  "version": "1.1.0",
+  "author": "Vladimir Kharlampidi",
+  "license": ["GPL", "MIT"],
+  "dependencies": {
+    "swiper": "~2.4.2",
+  }
+}

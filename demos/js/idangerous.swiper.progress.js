@@ -1,17 +1,17 @@
 /*
- * Swiper Smooth Progress 1.0
- * Plugin for Swiper 2.3+
- * http://www.idangero.us/sliders/swiper/
+ * Swiper Smooth Progress 1.1.0
+ * Smooth progress plugin for Swiper
  *
- * Copyright 2012-2013, Vladimir Kharlampidi
+ * http://www.idangero.us/sliders/swiper/plugins/progress.php
+ *
+ * Copyright 2010-2014, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  *
  * Licensed under GPL & MIT
  *
- * Released on: November 2, 2013
+ * Released on: January 29, 2014
 */
-
 Swiper.prototype.plugins.progress = function(swiper, params) {
 	var isH = swiper.params.mode == 'horizontal';
 	var wrapperMaxPosition;
@@ -49,8 +49,8 @@ Swiper.prototype.plugins.progress = function(swiper, params) {
 		}
 		// Global Swiper Progress
 		swiper.progress = isH ? -transform.x/wrapperMaxPosition : -transform.y/wrapperMaxPosition;
-		
-		if(swiper.params.onProgressChange) swiper.params.onProgressChange(swiper);
+		// Callback
+		if(swiper.params.onProgressChange) swiper.fireCallback(swiper.params.onProgressChange,swiper);
 	}
 	
 	//Plugin Hooks
