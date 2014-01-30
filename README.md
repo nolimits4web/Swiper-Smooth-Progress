@@ -37,7 +37,7 @@ $ cd demos
 $ bower install
 ```
 
-Then you can open demos page in a browser. 
+Then you can open demos page in a browser.
 You can use `npm` `serve` module which will create a temporary local server, that will help you watch the demos with no setup overhead.
 
 If you don't have already `serve` module installed, the recommanded way is to install it globally:
@@ -57,3 +57,7 @@ or being in the root folder:
 ```
 $ serve ./demos/ -p 5000
 ```
+
+License
+-------
+GPL & MIT
