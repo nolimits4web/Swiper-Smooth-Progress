@@ -1,7 +1,7 @@
 {
-  "name": "Swiper-Smooth-Progress",
+  "name": "swiper-smooth-progress",
   "version": "1.1.0",
-  "description": "Mobile touch slider and framework with hardware accelerated transitions",
+  "description": "Smooth progress plugin for Swiper",
   "main": "dist/idangerous.swiper.progress.js",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/nolimits4web/Swiper-Smooth-Progress/issues"
   },
-  "homepage": "http://www.idangero.us/sliders/swiper",
+  "homepage": "http://www.idangero.us/sliders/swiper/progress.php",
   "engines": {
     "node": ">= 0.10.0"
   },
