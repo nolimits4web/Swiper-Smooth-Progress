@@ -1,7 +1,7 @@
 'use strict';
 
 /*global require:true, module:false*/
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     // show elapsed time at the end
     require('time-grunt')(grunt);
     // load all grunt tasks
@@ -17,19 +17,19 @@ module.exports = function(grunt) {
         // Metadata.
         pkg: grunt.file.readJSON('bower.json'),
         banner: '/*\n' +
-          ' * Swiper Smooth Progress <%= pkg.version %>\n' +
-          ' * <%= pkg.description %>\n' +
-          ' *\n' +
-          ' * <%= pkg.homepage %>\n' +
-          ' *\n' +
-          ' * Copyright 2010-<%= grunt.template.today("yyyy") %>, <%= pkg.author %>\n' +
-          ' * The iDangero.us\n' +
-          ' * http://www.idangero.us/\n' +
-          ' *\n' +
-          ' * Licensed under <%= pkg.license.join(" & ") %>\n' +
-          ' *\n' +
-          ' * Released on: <%= grunt.template.today("mmmm d, yyyy") %>\n' +
-          '*/\n',
+        ' * Swiper Smooth Progress <%= pkg.version %>\n' +
+        ' * <%= pkg.description %>\n' +
+        ' *\n' +
+        ' * <%= pkg.homepage %>\n' +
+        ' *\n' +
+        ' * Copyright 2010-<%= grunt.template.today("yyyy") %>, <%= pkg.author %>\n' +
+        ' * The iDangero.us\n' +
+        ' * http://www.idangero.us/\n' +
+        ' *\n' +
+        ' * Licensed under <%= pkg.license.join(" & ") %>\n' +
+        ' *\n' +
+        ' * Released on: <%= grunt.template.today("mmmm d, yyyy") %>\n' +
+        '*/\n',
         // Task configuration.
         concat: {
             options: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
                 dest: 'dist/<%= swiper.filename %>.js'
             }
         },
-         copy: {
+        copy: {
             demos: {
                 files: [{
                     expand: true,
@@ -90,11 +90,11 @@ module.exports = function(grunt) {
     // Build a new version of the library
     this.registerTask('build', 'Builds a distributable version of <%= pkg.name %>', [
         'concat:js',
-        //'jshint:all',
+        'jshint:lib',
         'uglify'
     ]);
 
-      // Build demo
+    // Build demo
     this.registerTask('demo', 'Builds demo of <%= pkg.name %>', [
         'build',
         'copy:demos'
