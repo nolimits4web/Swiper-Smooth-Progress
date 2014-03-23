@@ -194,12 +194,12 @@
         }
           
       },
-      onSetWrapperTransition: function(swiper) {
+      onSetWrapperTransition: function(swiper, speed) {
         for (var i = 0; i < swiper.slides.length; i++){
-          swiper.setTransition(swiper.slides[i], swiper.params.speed);
+          swiper.setTransition(swiper.slides[i], speed);
           var characters = swiper.slides[i].querySelectorAll('span');
           for (var j=0; j<characters.length; j++) {
-            swiper.setTransition(characters[j], swiper.params.speed);
+            swiper.setTransition(characters[j], speed);
           }
         }
 

@@ -157,10 +157,10 @@
           swiper.setTransition(swiper.slides[i].querySelector('.flip-container'),0);
         }
       },
-      onSetWrapperTransition: function(swiper) {
+      onSetWrapperTransition: function(swiper, speed) {
         for (var i = 0; i < swiper.slides.length; i++){
-          swiper.setTransition(swiper.slides[i], swiper.params.speed);
-          swiper.setTransition(swiper.slides[i].querySelector('.flip-container'),swiper.params.speed);
+          swiper.setTransition(swiper.slides[i], speed);
+          swiper.setTransition(swiper.slides[i].querySelector('.flip-container'), speed);
         }
       }
     })

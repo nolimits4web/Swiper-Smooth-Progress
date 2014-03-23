@@ -232,17 +232,17 @@
         swiper.setTransition(bg, 0)
 
       },
-      onSetWrapperTransition: function(swiper) {
+      onSetWrapperTransition: function(swiper, speed) {
         for (var i=0; i<document.querySelectorAll('.swiper-slide .pic').length; i++) {
-            swiper.setTransition(document.querySelectorAll('.swiper-slide .pic')[i],swiper.params.speed);
+            swiper.setTransition(document.querySelectorAll('.swiper-slide .pic')[i], speed);
         }
         for (var i=0; i<document.querySelectorAll('.swiper-slide .pic div').length; i++) {
-            swiper.setTransition(document.querySelectorAll('.swiper-slide .pic div')[i],swiper.params.speed);
+            swiper.setTransition(document.querySelectorAll('.swiper-slide .pic div')[i], speed);
         }
         for (var i=0; i<document.querySelectorAll('.swiper-slide h2').length; i++) {
-            swiper.setTransition(document.querySelectorAll('.swiper-slide h2')[i], swiper.params.speed);
+            swiper.setTransition(document.querySelectorAll('.swiper-slide h2')[i], speed);
         } 
-        swiper.setTransition(bg, swiper.params.speed);
+        swiper.setTransition(bg, speed);
       }
     })
   </script>
